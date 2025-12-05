@@ -45,21 +45,6 @@ Input Preprocessing
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
 - Metrics: Accuracy
--
-
-
----
-
- **📊 Results**
-
-| Metric | 
-|-------|------|
-| Training Accuracy | 
-| Testing Accuracy | 
-
-
-
----
 
 **🛠️ Technologies Used**
 
