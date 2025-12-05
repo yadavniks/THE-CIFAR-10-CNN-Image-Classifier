@@ -3,3 +3,4 @@ tensorflow-cpu==2.14.0
 numpy==1.25.0
 pillow==10.1.0
 h5py==3.9.0
+gdown==4.8.0   # optional if downloading model from Google Drive
