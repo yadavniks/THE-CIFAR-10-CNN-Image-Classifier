@@ -1,29 +1,88 @@
-THE CIFAR-10 CNN Image Classifier
+# 🎯 CIFAR-10 Image Classification (Deep Learning Project)
 
-A web-based Convolutional Neural Network (CNN) image classifier built using **Streamlit** and **TensorFlow/Keras**. This project allows users to upload an image and predicts its class from the **CIFAR-10 dataset** categories:  
-
-**Classes:**  
-`airplane`, `automobile`, `bird`, `cat`, `deer`, `dog`, `frog`, `horse`, `ship`, `truck`
+This project builds and trains a neural network to classify images from the **CIFAR-10 dataset** into 10 object categories such as airplanes, cars, animals, and more.  
+The model is implemented using **Python, TensorFlow/Keras**, and evaluates performance with metrics like accuracy and loss.
 
 ---
 
- Features
+📂 Dataset
 
-- Upload images in JPG, JPEG, or PNG format.  
-- Classify images into 10 CIFAR-10 categories using a CNN.  
-- Display the uploaded image alongside the predicted class and confidence score.  
-- Fully runs locally—no need for API or Flask backend.  
-- Simple, interactive, and user-friendly interface using Streamlit.
+CIFAR-10 contains:
+
+| Feature | Detail |
+|--------|--------|
+| Image size | 32 × 32 |
+| Color | RGB |
+| Classes | 10 |
+| Total images | 60,000 |
+| Train/Test split | 50,000 / 10,000 |
+
+Classes include:
+> airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+
+Dataset is loaded directly from **Keras datasets**.
+
+---
+ 🧠 Model
+
+The model uses a Convolutional Neural Network (CNN) with layers such as:
+
+- Convolutional layers (feature extraction)
+- MaxPooling (dimension reduction)
+- Dense Fully-Connected layers
+- Softmax output (classification into 10 classes)
+
+Input Preprocessing
+- Normalization:  
+  \`x_norm = x / 255.0 - 0.5\`
+- One-hot encoding for labels:  
+  \`to_categorical(y)\`
 
 ---
 
- Project Structure
-CIFAR10-CNN-Image-Classifier/
-│
-├── app.py # Streamlit app
-├── cifar10_cnn_model.h5 # Trained CNN model (optional)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── images/ # Optional folder for sample images
+🚀 Training
 
+- Optimizer: Adam
+- Loss: Categorical Crossentropy
+- Metrics: Accuracy
+- Trained for: _(edit: X epochs you used)_
 
+You can modify hyperparameters to improve accuracy.
+
+---
+
+ 📊 Results
+
+| Metric | Value |
+|-------|------|
+| Training Accuracy | _(edit) \_% |
+| Testing Accuracy | _(edit) \_% |
+
+> You can also add accuracy/loss plots here
+
+---
+
+🛠️ Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| Python | Programming |
+| TensorFlow / Keras | Deep Learning |
+| NumPy | Computation |
+| Matplotlib/Seaborn | Visualization |
+| Jupyter Notebook | Development |
+
+---
+
+ How to Run
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run notebook
+jupyter notebook CIFAR-10-v2.ipynb
