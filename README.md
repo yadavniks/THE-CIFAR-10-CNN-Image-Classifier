@@ -45,30 +45,32 @@ Input Preprocessing
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
 - Metrics: Accuracy
-- Trained for: _(edit: X epochs you used)_
+-
 
-You can modify hyperparameters to improve accuracy.
 
 ---
 
  **📊 Results**
 
-| Metric | Value |
+| Metric | 
 |-------|------|
-| Training Accuracy | _(edit) \_% |
-| Testing Accuracy | _(edit) \_% |
+| Training Accuracy | 
+| Testing Accuracy | 
 
-> You can also add accuracy/loss plots here
+
 
 ---
 
 **🛠️ Technologies Used**
 
-| Tool | Purpose |
-|------|---------|
-| Python | Programming |
-| TensorFlow / Keras | Deep Learning |
-| NumPy | Computation |
-| Matplotlib/Seaborn | Visualization |
-| Jupyter Notebook | Development |
+| Category | Tools | Purpose |
+|----------|-------|---------|
+| Language | **Python** | Core programming |
+| Deep Learning | **TensorFlow, Keras** | CNN model creation & training |
+| Computation | **NumPy** | Matrix operations & preprocessing |
+| Visualization | **Matplotlib, Seaborn** | Accuracy/loss plots + results |
+| Image Handling | **OpenCV** | Input preprocessing |
+| Deployment | **Streamlit** | Web app for model inference |
+| Development | **Jupyter Notebook** | Experimenting & debugging |
+
 
