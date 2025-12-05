@@ -5,7 +5,7 @@ The model is implemented using **Python, TensorFlow/Keras**, and evaluates perfo
 
 ---
 
-📂 Dataset
+**📂 Dataset**
 
 CIFAR-10 contains:
 
@@ -23,7 +23,7 @@ Classes include:
 Dataset is loaded directly from **Keras datasets**.
 
 ---
- 🧠 Model
+ **🧠 Model**
 
 The model uses a Convolutional Neural Network (CNN) with layers such as:
 
@@ -40,7 +40,7 @@ Input Preprocessing
 
 ---
 
-🚀 Training
+**🚀 Training**
 
 - Optimizer: Adam
 - Loss: Categorical Crossentropy
@@ -51,7 +51,7 @@ You can modify hyperparameters to improve accuracy.
 
 ---
 
- 📊 Results
+ **📊 Results**
 
 | Metric | Value |
 |-------|------|
@@ -62,7 +62,7 @@ You can modify hyperparameters to improve accuracy.
 
 ---
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
 | Tool | Purpose |
 |------|---------|
@@ -72,17 +72,3 @@ You can modify hyperparameters to improve accuracy.
 | Matplotlib/Seaborn | Visualization |
 | Jupyter Notebook | Development |
 
----
-
- How to Run
-
-```bash
-# Clone repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run notebook
-jupyter notebook CIFAR-10-v2.ipynb
